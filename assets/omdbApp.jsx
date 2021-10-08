@@ -101,7 +101,7 @@ function App() {
   const [currentPage, setCurrentPage] = useState(1);
   const [pageSize, setPageSize] = useState(10);
   const [{ data, isLoading, isError }, doFetch] = useDataApi(
-    `http://www.omdbapi.com/?apikey=${apiKey}&s=Atlantis`,
+    `https://www.omdbapi.com/?apikey=${apiKey}&s=Atlantis`,
     {
       Search: []
     }
@@ -123,7 +123,7 @@ function App() {
       <form
         onSubmit={event => {
           console.log("onSubmit doFetch");
-          doFetch(`http://www.omdbapi.com/?apikey=${apiKey}&s=${query}`);
+          doFetch(`https://www.omdbapi.com/?apikey=${apiKey}&s=${query}`);
 
           event.preventDefault();
         }}
