@@ -101,7 +101,7 @@ function App() {
   const [currentPage, setCurrentPage] = useState(1);
   const [pageSize, setPageSize] = useState(10);
   const [{ data, isLoading, isError }, doFetch] = useDataApi(
-    `https://www.omdbapi.com/?apikey=${apiKey}&s=Atlantis`,
+    `https://www.omdbapi.com/?apikey=${apiKey}&s=breakfast%20at%20tiffany%27s`,
     {
       Search: []
     }
@@ -132,7 +132,7 @@ function App() {
         <input
           type="text"
           className="form-control"
-          placeholder="Atlantis..."
+          placeholder="Breakfast At Tiffany's..."
           aria-describedby="search-submit"
           value={query}
           onChange={event => setQuery(event.target.value)}
