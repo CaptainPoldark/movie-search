@@ -159,7 +159,7 @@ function App() {
         <ul className="list-group">
           {page.map((item, i) => (
             <li className="list-group-item" key={i}>
-              <img src={item.Poster} alt="Image not available" className="rounded img-fluid img-thumbnail mx-auto d-block"/><br/>
+              <img src={item.Poster} alt="Oh No! I can't find the picture!" className="rounded img-fluid img-thumbnail mx-auto d-block"/><br/>
               <h3>{item.Title}</h3>
               <a href={"https://www.imdb.com/title/" + item.imdbID} ><div><p>View this {item.Type} on IMDB</p></div></a>
               <div><p>Released: {item.Year}</p></div>
