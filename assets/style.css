@@ -1,0 +1,74 @@
+body {
+    padding-left: 25%;
+    padding-right: 25%;
+    
+}
+.input-form{
+    padding: 5%;
+}
+.submit-btn {
+    display: flex;
+    align-items: flex-end;
+}
+ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+  }
+  
+ul li {
+    display: inline-block;
+    border: 1px solid rgb(37, 34, 34); /* Add a thin border to each list item */
+    border-radius: 3px;
+    
+    padding: 12px; /* Add some padding */   
+  }
+  .list-group-item {
+        
+    background-color: rgb(207, 207, 207); /* Add a grey background color */
+  }
+.img-thumbnail {
+    height: 30%;
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+    }
+    h1 {
+        color: rgb(143, 78, 200);
+    }
+    h3{
+        color: rgb(143, 78, 200);
+    }
+    h4 {
+        color: rgb(143, 78, 200);
+    }
+    p {
+        color: rgb(187, 179, 179)
+        
+    }
+    a {
+        color: rgb(143, 78, 200);
+    }
+    .list-group-item {
+        
+        background-color: rgb(44, 42, 42); /* Add a grey background color */
+      }
+    img {
+      opacity: .75;
+      transition: opacity .5s ease-in-out;
+    }
+    img:hover {
+      opacity: 1;
+    }
+  }
+@media only screen and (max-width: 800px) {
+    /* For mobile phones: */
+    [class*="img-thumbnail"] {
+      width: auto;
+    }
+    body {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+  }
